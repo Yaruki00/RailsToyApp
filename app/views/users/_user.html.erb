@@ -9,4 +9,9 @@
     <%= user.email %>
   </p>
 
+  <p>
+    <strong>Latest Micropost:</strong>
+    <%= user.microposts.first.nil? ? "none" : user.microposts.first.content %>
+  </p>
+
 </div>
